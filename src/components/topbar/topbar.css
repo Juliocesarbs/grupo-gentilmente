@@ -1,0 +1,142 @@
+.TopbarItems{
+    background-color: white;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+  
+}
+
+.topbar-logo{
+    color: #69BAA0;
+    justify-self: start;
+    margin-left: 10px;
+    cursor:pointer;
+}
+
+.topbar-logo .logo{
+    margin-top: 12px;
+}
+
+.fa-react{
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-gap:10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.nav-links{
+    color: #69BAA0;
+    text-decoration: none;
+    padding: 0.5rem 1 rem;
+}
+
+.nav-links:hover{
+    background-color: #69BAA0;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+    padding: 5px;
+}
+
+.fa-bars{
+    color: #69BAA0;
+}
+
+.nav-links-mobile{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 960px){
+    .TopbarItems{
+        position: relative;
+    }
+
+    .nav-menu{
+        display: flex;
+        flex-direction:column;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active{
+        background-color: white;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5 ease;
+        z-index: 1;
+    }
+
+    .nav-links{
+        text-align: center;
+        padding: 0;
+        height: 70px;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover{
+        background-color: white;
+        border-radius: 0;
+    }
+
+
+    .menu-icon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .fa-times{
+        color: #69BAA0;
+        font-size: 2rem;
+    }
+
+    
+    .nav-links-mobile{
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        text-decoration: none;
+        background: #69BAA0;
+        color: white;
+        font-size: 1.5rem;
+        border: solid 3px #69BAA0;
+    }
+
+    .nav-links-mobile:hover{
+        background: white;
+        color: #69BAA0;
+        transition: 250ms;
+    }
+
+    Button{
+        display: none;
+    }
+}

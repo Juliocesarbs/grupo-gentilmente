@@ -1,0 +1,48 @@
+:root{
+    --primary: white;
+}
+
+.TopbarItems .btn{
+    padding: 8px 20px;
+    border-radius: 50px 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border: solid 3px #69BAA0;
+    margin-right: 20px;
+}
+
+.TopbarItems .btn:hover{
+    padding: 8px 20px;
+    transition: all 0.3s ease-out;
+    background: #69BAA0;
+    color: white;
+    transition: 250ms;
+}
+
+.TopbarItems .btn--primary{
+    background-color: var(--primary);
+}
+
+.TopbarItems .btin--outline{
+    background-color: transparent;
+    color: white;
+    padding: 8px 20 px;
+    border-radius: 4px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+}
+
+.TopbarItems .btn--medium{
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 18px;
+    color:#69BAA0;
+}
+
+.TopbarItems .btn--large{
+    padding: 12px 26px;
+    border-radius: 4px;
+    font-size: 18px;
+    color:white;
+}

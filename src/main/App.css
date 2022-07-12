@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'tt_souses';
+    src: local('tt_souses'), url(../font/Regular.ttf) format('truetype');
+}
+
+.app{
+    font-family: tt_souses, serif;
+    height: 100vh;
+}
+
+.sections{
+    width: 100%;
+    height: calc(100 -70px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    scroll-behavior: smooth; 
+    scroll-snap-type: y mandatory;    
+}  
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.sections .sec{
+    height: 695px;
+}
+        
+
+@media screen and (max-width: 960px){
+
+.sections{
+        top: 0;
+                
+}
+}
+    
+
+    
